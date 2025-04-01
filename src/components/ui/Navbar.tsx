@@ -1,19 +1,23 @@
-import React from "react";
 import Logo from "@/assets/KorxteamIcon.png";
 import Button from "../common/Button";
-import { Chain, Discord } from "@/assets/icons";
-
+import { Chain, Discord, Github } from "@/assets/icons";
 
 const Navbar = () => {
   return (
-    <div className="h-10 w-full">
-      <nav className="h-full w-full flex py-8 px-4 items-center justify-between">
+    <header
+      className="bg-content h-16 w-full sticky top-0 left-0 z-50 border-b-[1px] border-stroke px-2 shadow-lg text-custom"
+      style={{
+        background: "transparent",
+        backdropFilter: "blur(10px)",
+      }}
+    >
+      <nav className="h-full w-full flex py-8 px-4 items-center justify-between mx-auto max-w-screen-2xl ">
         <div className="flex items-center">
           <figure>
             <img src={Logo} alt="Logo" className="w-10 h-10" />
           </figure>
           <div className="px-4">
-            <ul className="flex space-x-8 text-white font-semibold text-xs">
+            <ul className="flex space-x-8 font-semibold text-xs">
               <li>
                 <a href="#home">Inicio</a>
               </li>
@@ -30,13 +34,28 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="">
-            <Button text="Aprender ahora" onClick={() => console.log("Event Button")} className="bg-amber-700" iconMargin="0 0 0 4px" reverse>
-              <Chain className="w-4 h-4"/>
+        <div className="flex">
+          <Button
+            text="Aprender ahora"
+            onClick={() => console.log("Event Button")}
+            className="bg-pink-500 py-2 px-4"
+            iconMargin="0 0 0 4px"
+            reverse
+          >
+            <Chain className="w-4 h-4" />
+          </Button>
+
+          <div className="flex gap-4 ml-4" about="Redes">
+            <Button redirect toRef="discord.com">
+              <Discord className="w-4 h-4" />
             </Button>
+            <Button redirect toRef="instagram.com">
+              <Github className="w-4 h-4 " />
+            </Button>
+          </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

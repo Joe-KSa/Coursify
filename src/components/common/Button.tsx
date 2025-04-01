@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 type ButtonProps = {
-  text: string;
-  onClick: () => void;
+  text?: string;
+  onClick?: () => void;
   disabled?: boolean;
   className?: string;
   redirect?: boolean;
@@ -17,8 +17,8 @@ const Button = ({
   text,
   onClick,
   disabled = false,
-  className,
-  redirect,
+  className = "",
+  redirect = false,
   toRef = "#",
   iconMargin,
   children,
@@ -26,18 +26,19 @@ const Button = ({
 }: ButtonProps) => {
   const renderContent = () => (
     <div
-      className="flex items-center justify-center"
+      className="flex items-center justify-center cursor-pointer"
       style={{ flexDirection: reverse ? "row-reverse" : "row" }}
     >
-      <span className="flex">
-        {children && <i style={{ margin: iconMargin }}>{children}</i>}
-      </span>
+      {children && (
+        <span className="flex">
+          <i style={{ margin: iconMargin }}>{children}</i>
+        </span>
+      )}
       {text && <span className="font-semibold">{text}</span>}
     </div>
   );
 
-  const baseStyle =
-    "py-2 px-4 rounded-xl text-white transition duration-300 text-xs";
+  const baseStyle = `rounded-sm text-white transition duration-300 text-xs flex items-center`;
 
   const disabledStyle = "opacity-50 cursor-not-allowed";
 

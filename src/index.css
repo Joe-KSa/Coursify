@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+    --color-content: #333333;
+    --color-custom: #fff;
+    --color-stroke: #ffffff1a
+}
