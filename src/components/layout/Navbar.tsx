@@ -1,6 +1,8 @@
 import Logo from "@/assets/KorxteamIcon.png";
-import Button from "../common/Button";
-import { Chain, Discord, Github } from "@/assets/icons";
+import { Button } from "../ui/button";
+import { ChainIcon, DiscordIcon, GithubIcon } from "@/assets/icons";
+import OffCanvas from "../widget/OffCanvas";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +14,7 @@ const Navbar = () => {
       }}
     >
       <nav className="size-full flex py-8 px-4 items-center justify-between mx-auto max-w-screen-2xl ">
-        <div className="flex items-center">
+        <div className="hidden lg:flex items-center">
           <figure>
             <img src={Logo} alt="Logo" className="w-10 h-10" />
           </figure>
@@ -34,26 +36,26 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="hidden lg:flex">
           <Button
-            text="Aprender ahora"
             onClick={() => console.log("Event Button")}
-            className="bg-btn py-2 px-4 text-txt-primary"
-            iconMargin="0 0 0 4px"
-            reverse
+            className="bg-btn py-2 px-4 text-txt-primary text-xs"
           >
-            <Chain className="w-4 h-4" />
+            Aprender ahora <ChainIcon className="size-4" />
           </Button>
 
-          <div className="flex gap-4 ml-4" about="Redes">
-            <Button redirect toRef="https://discord.com/invite/fhjm8rJAf5">
-              <Discord className="w-4 h-4" />
+          <div className="flex" about="Redes">
+            <Button variant="ghost">
+              <Link to="https://discord.com/invite/fhjm8rJAf5">
+                <DiscordIcon className="size-4" />
+              </Link>
             </Button>
-            <Button redirect toRef="instagram.com">
-              <Github className="w-4 h-4 " />
+            <Button variant="ghost">
+              <GithubIcon className="size-4" />
             </Button>
           </div>
         </div>
+        <OffCanvas />
       </nav>
     </header>
   );
