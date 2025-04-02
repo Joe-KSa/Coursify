@@ -5,13 +5,13 @@ import { Chain, Discord, Github } from "@/assets/icons";
 const Navbar = () => {
   return (
     <header
-      className="bg-content h-16 w-full sticky top-0 left-0 z-50 border-b-[1px] border-stroke px-2 shadow-lg text-custom"
+      className="bg-content h-16 w-full sticky top-0 left-0 z-50 border-b-[1px] border-stroke px-2 shadow-lg text-txt-primary"
       style={{
         background: "transparent",
         backdropFilter: "blur(10px)",
       }}
     >
-      <nav className="h-full w-full flex py-8 px-4 items-center justify-between mx-auto max-w-screen-2xl ">
+      <nav className="size-full flex py-8 px-4 items-center justify-between mx-auto max-w-screen-2xl ">
         <div className="flex items-center">
           <figure>
             <img src={Logo} alt="Logo" className="w-10 h-10" />
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Button
             text="Aprender ahora"
             onClick={() => console.log("Event Button")}
-            className="bg-pink-500 py-2 px-4"
+            className="bg-btn py-2 px-4 text-txt-primary"
             iconMargin="0 0 0 4px"
             reverse
           >
@@ -46,7 +46,7 @@ const Navbar = () => {
           </Button>
 
           <div className="flex gap-4 ml-4" about="Redes">
-            <Button redirect toRef="discord.com">
+            <Button redirect toRef="https://discord.com/invite/fhjm8rJAf5">
               <Discord className="w-4 h-4" />
             </Button>
             <Button redirect toRef="instagram.com">
