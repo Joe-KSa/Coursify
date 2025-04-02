@@ -39,3 +39,6 @@
     color: rgb(51, 51, 51);
 }
 
+[role="dialog"] {
+    border: none !important;
+}

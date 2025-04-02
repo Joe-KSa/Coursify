@@ -17,7 +17,7 @@ const Dashboard = () => {
               </span>
               <span className="invisible" />
               <br />
-              <span className="mt-6 text-4xl sm:text-5xl opacity-[1] font-bold">
+              <span className="mt-6 text-4xl sm:text-5xl opacity-[1] font-bold text-txt-primary">
                 Un rincón de aprendizaje
               </span>
             </h1>
@@ -37,7 +37,7 @@ const Dashboard = () => {
           </div>
           <div className="absolute left-[55%] hidden aspect-video w-[110dvh] lg:block">
             <img
-              src="https://i.pinimg.com/originals/6a/8e/4d/6a8e4d2b450f10d3733422efc4e95526.gif"
+              src="https://i.pinimg.com/originals/93/6c/ad/936cadb0814fbd5d779f6c5557e95983.gif"
               alt=""
             />
           </div>
