@@ -1,0 +1,30 @@
+.mask {
+    mask-image:
+        linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+}
+
+.animationStrip {
+    animation: swipe-invert 60s linear infinite;
+}
+
+.animationStripReverse {
+    animation: swipe-invert-reverse 60s linear infinite;
+}
+
+@keyframes swipe-invert {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes swipe-invert-reverse {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

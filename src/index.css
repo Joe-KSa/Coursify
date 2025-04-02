@@ -1,7 +1,20 @@
 @import "tailwindcss";
 
+:root {
+    --primary-color: #235285;
+    --secondary-color: #29323c;
+}
+
 @theme {
-    --color-content: #333333;
-    --color-custom: #fff;
-    --color-stroke: #ffffff1a
+    --color-primary: var(--primary-color);
+    --color-secondary: var(--secondary-color);
+    --color-txt-primary: #fff;
+    --color-stroke: #ffffff1a;
+    --color-btn: var(--secondary-color);
+}
+
+@layer utilities {
+    .bg-gradient-custom {
+        background: linear-gradient(135deg, rgba(141, 141, 141, 0.2), rgba(255, 255, 255, 0.1));
+    }
 }

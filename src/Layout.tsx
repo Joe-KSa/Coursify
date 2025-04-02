@@ -5,9 +5,9 @@ import "./styles/layout.css";
 
 const Layout = () => {
   return (
-    <div className="bg-content">
+    <div >
       <Navbar />
-      <main className="overflow-hidden">
+      <main className="overflow-hidden ">
         <Outlet />
       </main>
     </div>
