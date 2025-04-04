@@ -8,7 +8,7 @@ import {
 import { Button } from "../ui/button";
 import { MenuIcon } from "@/assets/icons";
 
-const OffCanvas = () => {
+export const OffCanvas = () => {
   return (
     <Sheet>
       <SheetTrigger className="lg:hidden" asChild>
@@ -21,7 +21,7 @@ const OffCanvas = () => {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="bg-secondary border-0 bg-gradient-to-t from-primary to-secondary p-4 text-txt-primary"
+        className="bg-secondary border-0 bg-gradient-to-t from-primary to-secondary p-4 text-txt-primary z-[999]"
       >
         <SheetTitle>Cursos</SheetTitle>
         <SheetDescription>
@@ -31,5 +31,3 @@ const OffCanvas = () => {
     </Sheet>
   );
 };
-
-export default OffCanvas;

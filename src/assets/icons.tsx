@@ -4,6 +4,7 @@ type IconProps = SVGProps<SVGSVGElement> & {
   className?: string;
 };
 
+
 export const DiscordIcon = ({ className }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

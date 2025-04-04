@@ -5,7 +5,16 @@ body {
   min-height: 100%;
   margin: 0;
   line-height: inherit;
-  --tw-text-opacity: 1;
-  color: rgb(var(--default), var(--tw-text-opacity));
-  background-image: url("./assets/Decoration.png"), radial-gradient(at center right, var(--primary-color), var(--secondary-color));
+
+  /* Cuadriculas */
+  background-color: var(--primary-color);
+  background-image:
+    linear-gradient(to bottom, hsla(0, 0%, 100%, .05) 1px, transparent 1px),
+    /* Línea horizontal */
+    linear-gradient(to right, hsla(0, 0%, 100%, .05) 1px, transparent 1px);
+  /* Línea vertical */
+  background-size: 25px 25px;
+
+  /* Another Style */
+  /* background-image: url("./assets/Decoration.png"), radial-gradient(at center right, var(--primary-color), var(--secondary-color)); */
 }

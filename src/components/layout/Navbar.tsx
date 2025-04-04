@@ -1,13 +1,13 @@
 import Logo from "@/assets/KorxteamIcon.png";
 import { Button } from "../ui/button";
 import { ChainIcon, DiscordIcon, GithubIcon } from "@/assets/icons";
-import OffCanvas from "../widget/OffCanvas";
+import { OffCanvas } from "../widget";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <header
-      className="bg-content h-16 w-full sticky top-0 left-0 z-50 border-b-[1px] border-stroke px-2 shadow-lg text-txt-primary"
+      className="bg-content h-16 w-full sticky top-0 left-0 border-b-[1px] border-stroke px-2 shadow-lg text-txt-primary z-[100]"
       style={{
         background: "transparent",
         backdropFilter: "blur(10px)",
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <Button
             onClick={() => console.log("Event Button")}
-            className="bg-btn py-2 px-4 text-txt-primary text-xs"
+            className="bg-secondary py-2 px-4 text-txt-primary text-xs"
           >
             Aprender ahora <ChainIcon className="size-4" />
           </Button>
@@ -60,5 +60,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;
