@@ -1,16 +1,27 @@
 @import "tailwindcss";
 
+/* #191a1b54 */
 :root {
-    --primary-color: #235285;
-    --secondary-color: #29323c;
+    --primary-color: #121416;
+    --secondary-color: #363636;
+
+    /* Separador */
+    --separator-primary: #363636;
+    --separator-secondary: #121416;
 }
 
 @theme {
+    /* Background */
     --color-primary: var(--primary-color);
     --color-secondary: var(--secondary-color);
+
+    /* Texto */
     --color-txt-primary: #fff;
     --color-stroke: #ffffff1a;
+
+    /* Botones */
     --color-btn: var(--secondary-color);
+    
 }
 
 @layer utilities {

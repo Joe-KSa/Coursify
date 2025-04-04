@@ -1,0 +1,39 @@
+.embed {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.3s ease;
+    will-change: transform;
+}
+
+/* Posición inicial diferente para cada imagen */
+.embed:nth-child(1) img {
+    transform: translateY(0.5em) rotate(-2.2deg) scale(1.1);
+}
+
+.embed:nth-child(2) img {
+    max-width: 350px;
+    transform: translateY(-0.5em) rotate(2.2deg) scale(1.1);
+}
+
+.embed:nth-child(2) {
+    z-index: 10;
+}
+
+.embed:nth-child(3) img {
+    transform: translateY(0.5em) rotate(-2.2deg) scale(1.1);
+}
+
+/* Efecto hover */
+.embed:hover {
+    z-index: 20;
+}
+
+.embed img {
+    outline: 4px solid hsla(0, 0%, 100%, 0.08)
+}
+
+.embed:nth-child(1):hover, .embed:nth-child(3):hover {
+    transform: scale(1.2) rotate(2.2deg) translateZ(0px);
+}
+
+.embed:nth-child(2):hover {
+    transform: scale(1.2) rotate(-2.2deg) translateZ(0px);
+}

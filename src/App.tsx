@@ -2,14 +2,14 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Dashboard from "./pages/dashboard";
+import LandingPage from "./pages/landing";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<LandingPage />} />
         </Route>
       </Routes>
     </Router>
