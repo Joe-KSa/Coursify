@@ -5,7 +5,7 @@ import "./styles/layout.css";
 
 const Layout = () => {
   return (
-    <div >
+    <div>
       <Navbar />
       <main className="overflow-hidden ">
         <Outlet />

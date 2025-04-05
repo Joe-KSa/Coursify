@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { CloseIcon } from "@/assets/icons"
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
-  return <SheetPrimitive.Root data-slot="sheet" {...props} style={{border: "none"}}/>
+  return <SheetPrimitive.Root data-slot="sheet" {...props}/>
 }
 
 function SheetTrigger({

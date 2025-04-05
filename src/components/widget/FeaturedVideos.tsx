@@ -14,7 +14,7 @@ export const FeaturedVideos = () => {
               <img
                 src={MtaImage}
                 alt=""
-                className="cursor-pointer flex transform-gpu rounded-[12px] bento-gradient transition-transform duration-300 max-w-[300px] relative"
+                className="cursor-pointer flex transform-gpu rounded-[12px] bento-gradient transition-transform duration-300 max-w-[350px] relative"
               />
             </div>
           ))}

@@ -4,11 +4,11 @@
 }
 
 .animationStrip {
-    animation: swipe-invert 60s linear infinite;
+    animation: swipe-invert var(--velocity, 60s) linear infinite;
 }
 
 .animationStripReverse {
-    animation: swipe-invert-reverse 60s linear infinite;
+    animation: swipe-invert-reverse var(--velocity, 60s) linear infinite;
 }
 
 @keyframes swipe-invert {
