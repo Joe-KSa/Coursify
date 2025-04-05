@@ -1,4 +1,5 @@
 export { LanguageStrip } from "./LanguageStrip";
 export { OffCanvas } from "./OffCanvas"
-export { BentoCursos } from "./BentoCursos"
+export { BentoInfo } from "./BentoInfo"
 export { FeaturedVideos } from "./FeaturedVideos"
+export { ReviewsSection } from "./ReviewsSection"

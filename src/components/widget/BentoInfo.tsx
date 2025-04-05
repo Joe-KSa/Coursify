@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./styles/BentoCursos.module.css";
+import styles from "./styles/BentoInfo.module.css";
 import { DiscordLogo, FriendLogo } from "@/assets/lottie";
 import Lottie from "lottie-react";
 
 const containerClass =
-  "relative mx-auto size-full max-w-7xl rounded-[12px] border-1 border-secondary overflow-hidden bg-primary";
+  "relative mx-auto size-full max-w-7xl rounded-[12px] border-1 border-secondary overflow-hidden bg-[#191a1b54]";
 
 const containerLogo =
   "size-full overflow-hidden m-0 outline-0 text-center flex justify-center items-center flex-col p-6";
@@ -15,7 +15,7 @@ const Featured: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
       <div className="relative z-0 w-full flex flex-col gap-2 items-center justify-center h-full p-6">
         {children}
       </div>
-      <div className={`absolute inset-[4px] ${styles.gradientMask}`} />
+      <div className={styles.gradientMask} />
     </div>
   </div>
 );
@@ -29,7 +29,7 @@ const MinorFeat0: React.FC<{
       <div className="flex flex-col gap-2 items-center justify-center h-full space-y-4 relative z-0">
         {children}
       </div>
-      <div className={`absolute inset-[4px] ${styles.gradientMask}`} />
+      <div className={styles.gradientMask} />
     </div>
   </div>
 );
@@ -42,13 +42,13 @@ export const MajorFeat1: React.FC<{
     <div className={containerClass}>
       <div className="flex flex-col items-center justify-center h-full space-y-4 relative z-0">
         {children}
-        <div className={`absolute inset-[4px] ${styles.gradientMask}`} />
+        <div className={styles.gradientMask} />
       </div>
     </div>
   </div>
 );
 
-export const BentoCursos = () => {
+export const BentoInfo = () => {
   return (
     <div
       className={`${styles.announcet} size-full mt-4 max-w-7xl mx-auto px-4`}

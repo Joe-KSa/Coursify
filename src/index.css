@@ -6,8 +6,8 @@
     --secondary-color: #363636;
 
     /* Separador */
-    --separator-primary: #363636;
-    --separator-secondary: #121416;
+    --separator-primary: #171616ed;
+    --separator-secondary: #151616;
 }
 
 @theme {
